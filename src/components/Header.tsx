@@ -1,19 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
 
-function ShieldCheckIcon() {
-  return (
-    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M18 3L6 8.5v9c0 9.4 5.1 17.6 12 19.5 6.9-1.9 12-10.1 12-19.5v-9L18 3z"
-        fill="#2d8653"
-      />
-      <path
-        d="M15.5 23.3l-4.3-4.3 1.6-1.6 2.7 2.7 6.2-6.2 1.6 1.6-8 7.8z"
-        fill="white"
-      />
-    </svg>
-  );
-}
+const LOGO_URL =
+  "https://zupikgtoimkjpcfiwbes.supabase.co/storage/v1/object/public/Healthcare/logo/ChatGPT%20Image%20Apr%208,%202026,%2012_38_34%20PM.png";
 
 function PhoneIcon() {
   return (
@@ -32,12 +21,15 @@ export default function Header() {
   return (
     <header className="bg-white border-b border-gray-100 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between h-16">
-        <Link href="/" className="flex items-center gap-2">
-          <ShieldCheckIcon />
-          <span className="text-xl text-[#0a1e3d] tracking-tight">
-            <span className="font-extrabold">PickHealth</span>
-            <span className="font-normal">Insurance</span>
-          </span>
+        <Link href="/" className="flex items-center">
+          <Image
+            src={LOGO_URL}
+            alt="PickHealth Insurance"
+            width={180}
+            height={48}
+            className="h-10 w-auto object-contain"
+            priority
+          />
         </Link>
 
         <div className="text-right hidden sm:block">
