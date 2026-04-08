@@ -1,12 +1,12 @@
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
 const LOGO_URL =
   "https://zupikgtoimkjpcfiwbes.supabase.co/storage/v1/object/public/Healthcare/logo/ChatGPT%20Image%20Apr%208,%202026,%2012_38_34%20PM.png";
 
 function PhoneIcon() {
   return (
-    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <svg className="w-5 h-5 text-[#f26522]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -19,36 +19,33 @@ function PhoneIcon() {
 
 export default function Header() {
   return (
-    <header className="bg-white border-b border-gray-100 sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between h-16">
-        <Link href="/" className="flex items-center">
+    <header className="bg-white border-b border-gray-200">
+      <div className="max-w-6xl mx-auto px-4 sm:px-8 flex items-center justify-between py-3">
+        <Link href="/">
           <Image
             src={LOGO_URL}
             alt="PickHealth Insurance"
-            width={180}
-            height={48}
-            className="h-10 w-auto object-contain"
+            width={200}
+            height={60}
+            className="h-12 w-auto object-contain"
             priority
           />
         </Link>
 
         <div className="text-right hidden sm:block">
-          <p className="text-xs text-gray-400">Speak to a Licensed Insurance Agent</p>
+          <p className="text-xs text-gray-500">Speak with a Licensed Insurance Agent</p>
           <a
             href="tel:8338490822"
-            className="flex items-center justify-end gap-1.5 text-[#2d8653] font-bold text-sm"
+            className="flex items-center justify-end gap-1.5 font-bold text-gray-800 text-lg leading-tight"
           >
             <PhoneIcon />
-            Call (833) 849-0822
+            1-833-849-0822
           </a>
+          <p className="text-xs text-gray-400">Mon–Thurs: 9am–6pm&nbsp;|&nbsp;Fri: 9am–5:30pm EST</p>
         </div>
 
-        <a
-          href="tel:8338490822"
-          className="sm:hidden flex items-center gap-1.5 text-[#2d8653] font-bold text-sm"
-        >
+        <a href="tel:8338490822" className="sm:hidden text-[#f26522]">
           <PhoneIcon />
-          <span className="sr-only">Call (833) 849-0822</span>
         </a>
       </div>
     </header>
