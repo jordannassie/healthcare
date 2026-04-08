@@ -127,7 +127,7 @@ function LandingHero({
             value={zip}
             onChange={(e) => onChange(e.target.value.replace(/\D/g, ""))}
             onKeyDown={(e) => e.key === "Enter" && handleStart()}
-            className="flex-1 px-4 py-3 text-base outline-none"
+            className="flex-1 px-4 py-3 text-base border-2 border-transparent input-glow"
           />
           <button
             onClick={handleStart}
@@ -198,7 +198,7 @@ function BirthYearStep({
         value={value}
         onChange={(e) => onChange(e.target.value.replace(/\D/g, ""))}
         onKeyDown={(e) => e.key === "Enter" && value.length === 4 && onNext()}
-        className="w-full px-4 py-4 border-2 border-[#002868] rounded-lg text-base text-center outline-none mb-4 focus:border-[#E8000D]"
+        className="w-full px-4 py-4 border-2 border-[#002868] rounded-lg text-base text-center mb-4 input-glow"
       />
       <button
         onClick={onNext}
@@ -229,7 +229,7 @@ function StateStep({
       <select
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="w-full px-4 py-4 border-2 border-[#002868] rounded-lg text-base outline-none mb-4 bg-white focus:border-[#E8000D]"
+        className="w-full px-4 py-4 border-2 border-[#002868] rounded-lg text-base mb-4 bg-white input-glow"
       >
         <option value="">Select your state</option>
         {US_STATES.map((s) => (
@@ -295,13 +295,13 @@ function ContactStep({
             placeholder="First Name"
             value={data.firstName}
             onChange={(e) => onChange("firstName", e.target.value)}
-            className="flex-1 px-4 py-3 border-2 border-gray-300 rounded-lg outline-none focus:border-[#002868]"
+            className="flex-1 px-4 py-3 border-2 border-gray-300 rounded-lg input-glow"
           />
           <input
             placeholder="Last Name"
             value={data.lastName}
             onChange={(e) => onChange("lastName", e.target.value)}
-            className="flex-1 px-4 py-3 border-2 border-gray-300 rounded-lg outline-none focus:border-[#002868]"
+            className="flex-1 px-4 py-3 border-2 border-gray-300 rounded-lg input-glow"
           />
         </div>
         <input
@@ -309,14 +309,14 @@ function ContactStep({
           placeholder="Email Address"
           value={data.email}
           onChange={(e) => onChange("email", e.target.value)}
-          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg outline-none focus:border-[#002868]"
+          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-glow"
         />
         <input
           type="tel"
           placeholder="Phone Number"
           value={data.phone}
           onChange={(e) => onChange("phone", e.target.value)}
-          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg outline-none focus:border-[#002868]"
+          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg input-glow"
         />
       </div>
       <button

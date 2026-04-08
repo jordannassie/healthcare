@@ -9,3 +9,17 @@ body {
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+@keyframes input-glow-pulse {
+  0%   { box-shadow: 0 0 0px 0px rgba(37, 99, 235, 0); }
+  40%  { box-shadow: 0 0 14px 5px rgba(37, 99, 235, 0.55); }
+  100% { box-shadow: 0 0 20px 8px rgba(37, 99, 235, 0.85); }
+}
+
+.input-glow:focus {
+  outline: none;
+  border-color: #2563eb !important;
+  animation: input-glow-pulse 0.35s ease-out forwards;
+  box-shadow: 0 0 20px 8px rgba(37, 99, 235, 0.75);
+  transition: border-color 0.2s;
+}
