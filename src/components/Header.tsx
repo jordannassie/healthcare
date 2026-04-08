@@ -25,9 +25,9 @@ export default function Header() {
           <Image
             src={LOGO_URL}
             alt="American Healthcare"
-            width={400}
-            height={120}
-            className="h-24 w-auto object-contain"
+            width={200}
+            height={60}
+            className="h-14 w-auto object-contain"
             priority
           />
         </Link>
