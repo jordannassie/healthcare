@@ -8,6 +8,7 @@ import CookieBanner from "@/components/CookieBanner";
 export default function Page() {
   return (
     <div className="flex flex-col min-h-screen">
+      <div className="h-2 bg-[#002868] w-full" />
       <Header />
       <main className="flex-1 flex flex-col">
         <LandingPage />
