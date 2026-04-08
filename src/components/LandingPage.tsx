@@ -118,7 +118,7 @@ function LandingHero({
         <p className="text-sm text-left font-medium text-gray-700 mb-2">
           Start with your ZIP code:
         </p>
-        <div className="flex gap-0 rounded-md overflow-hidden border border-gray-300 shadow-sm">
+        <div className="flex">
           <input
             type="text"
             inputMode="numeric"
@@ -127,11 +127,11 @@ function LandingHero({
             value={zip}
             onChange={(e) => onChange(e.target.value.replace(/\D/g, ""))}
             onKeyDown={(e) => e.key === "Enter" && handleStart()}
-            className="flex-1 px-4 py-3 text-base border-2 border-transparent input-glow"
+            className="flex-1 px-4 py-3 text-base border-2 border-gray-300 border-r-0 rounded-l-md input-glow"
           />
           <button
             onClick={handleStart}
-            className="px-8 py-3 bg-[#E8000D] hover:bg-[#b50009] text-white font-bold text-base transition-colors cursor-pointer"
+            className="px-8 py-3 bg-[#E8000D] hover:bg-[#b50009] text-white font-bold text-base rounded-r-md transition-colors cursor-pointer shrink-0"
           >
             Start
           </button>

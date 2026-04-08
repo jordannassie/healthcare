@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import LandingPage from "@/components/LandingPage";
+import LocationBar from "@/components/LocationBar";
 import CarrierLogos from "@/components/CarrierLogos";
 import SiteFooter from "@/components/SiteFooter";
 import CookieBanner from "@/components/CookieBanner";
@@ -11,6 +12,7 @@ export default function Page() {
       <main className="flex-1 flex flex-col">
         <LandingPage />
       </main>
+      <LocationBar />
       <CarrierLogos />
       <SiteFooter />
       <CookieBanner />
