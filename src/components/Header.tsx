@@ -19,7 +19,7 @@ function PhoneIcon() {
 
 export default function Header() {
   return (
-    <header className="bg-white border-b-4 border-[#7EC8E3]">
+    <header className="bg-white border-b-4 border-[#002868]">
       <div className="max-w-6xl mx-auto px-4 sm:px-8 flex items-center justify-between py-3">
         <Link href="/">
           <Image
