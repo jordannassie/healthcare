@@ -51,7 +51,7 @@ function ProgressBar({ pct }: { pct: number }) {
     <div className="w-full max-w-sm mx-auto mb-2">
       <div className="w-full h-3 rounded-full bg-gray-200 overflow-hidden">
         <div
-          className="h-full rounded-full bg-[#BF0A30] transition-all duration-500"
+          className="h-full rounded-full bg-[#E8000D] transition-all duration-500"
           style={{ width: `${pct}%` }}
         />
       </div>
@@ -131,7 +131,7 @@ function LandingHero({
           />
           <button
             onClick={handleStart}
-            className="px-8 py-3 bg-[#BF0A30] hover:bg-[#96081f] text-white font-bold text-base transition-colors cursor-pointer"
+            className="px-8 py-3 bg-[#E8000D] hover:bg-[#b50009] text-white font-bold text-base transition-colors cursor-pointer"
           >
             Start
           </button>
@@ -198,7 +198,7 @@ function BirthYearStep({
         value={value}
         onChange={(e) => onChange(e.target.value.replace(/\D/g, ""))}
         onKeyDown={(e) => e.key === "Enter" && value.length === 4 && onNext()}
-        className="w-full px-4 py-4 border-2 border-[#002868] rounded-lg text-base text-center outline-none mb-4 focus:border-[#BF0A30]"
+        className="w-full px-4 py-4 border-2 border-[#002868] rounded-lg text-base text-center outline-none mb-4 focus:border-[#E8000D]"
       />
       <button
         onClick={onNext}
@@ -229,7 +229,7 @@ function StateStep({
       <select
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="w-full px-4 py-4 border-2 border-[#002868] rounded-lg text-base outline-none mb-4 bg-white focus:border-[#BF0A30]"
+        className="w-full px-4 py-4 border-2 border-[#002868] rounded-lg text-base outline-none mb-4 bg-white focus:border-[#E8000D]"
       >
         <option value="">Select your state</option>
         {US_STATES.map((s) => (
@@ -322,7 +322,7 @@ function ContactStep({
       <button
         onClick={onSubmit}
         disabled={!ready}
-        className="w-full mt-4 py-4 bg-[#BF0A30] hover:bg-[#96081f] disabled:opacity-40 text-white font-bold text-base rounded-lg transition-colors cursor-pointer"
+        className="w-full mt-4 py-4 bg-[#E8000D] hover:bg-[#b50009] disabled:opacity-40 text-white font-bold text-base rounded-lg transition-colors cursor-pointer"
       >
         Get My Free Quote →
       </button>
@@ -350,7 +350,7 @@ function DoneScreen() {
       </p>
       <a
         href="tel:8338490822"
-        className="mt-8 inline-flex items-center gap-2 px-8 py-4 bg-[#BF0A30] hover:bg-[#96081f] text-white font-bold rounded-lg transition-colors"
+        className="mt-8 inline-flex items-center gap-2 px-8 py-4 bg-[#E8000D] hover:bg-[#b50009] text-white font-bold rounded-lg transition-colors"
       >
         Call Now: 1-833-849-0822
       </a>

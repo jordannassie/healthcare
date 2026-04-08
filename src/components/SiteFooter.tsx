@@ -74,7 +74,7 @@ export default function SiteFooter() {
             The plans we represent and their subsidiaries do not discriminate on the basis of race,
             color, national origin, age, disability, sex, sexual orientation, gender identity, or
             religion. To learn more about our nondiscrimination policy, please{" "}
-            <a href="#" className="text-[#BF0A30] hover:underline">
+            <a href="#" className="text-[#E8000D] hover:underline">
               click here
             </a>
             .
