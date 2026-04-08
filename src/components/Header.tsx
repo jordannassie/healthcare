@@ -6,7 +6,7 @@ const LOGO_URL =
 
 function PhoneIcon() {
   return (
-    <svg className="w-5 h-5 text-[#f26522]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <svg className="w-5 h-5 text-[#BF0A30]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -19,7 +19,7 @@ function PhoneIcon() {
 
 export default function Header() {
   return (
-    <header className="bg-white border-b border-gray-200">
+    <header className="bg-white border-b-4 border-[#BF0A30]">
       <div className="max-w-6xl mx-auto px-4 sm:px-8 flex items-center justify-between py-3">
         <Link href="/">
           <Image
@@ -36,7 +36,7 @@ export default function Header() {
           <p className="text-xs text-gray-500">Speak with a Licensed Insurance Agent</p>
           <a
             href="tel:8338490822"
-            className="flex items-center justify-end gap-1.5 font-bold text-gray-800 text-lg leading-tight"
+            className="flex items-center justify-end gap-1.5 font-bold text-[#BF0A30] text-lg leading-tight"
           >
             <PhoneIcon />
             1-833-849-0822
@@ -44,7 +44,7 @@ export default function Header() {
           <p className="text-xs text-gray-400">Mon–Thurs: 9am–6pm&nbsp;|&nbsp;Fri: 9am–5:30pm EST</p>
         </div>
 
-        <a href="tel:8338490822" className="sm:hidden text-[#f26522]">
+        <a href="tel:8338490822" className="sm:hidden text-[#BF0A30]">
           <PhoneIcon />
         </a>
       </div>

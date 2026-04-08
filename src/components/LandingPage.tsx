@@ -51,7 +51,7 @@ function ProgressBar({ pct }: { pct: number }) {
     <div className="w-full max-w-sm mx-auto mb-2">
       <div className="w-full h-3 rounded-full bg-gray-200 overflow-hidden">
         <div
-          className="h-full rounded-full bg-[#f26522] transition-all duration-500"
+          className="h-full rounded-full bg-[#BF0A30] transition-all duration-500"
           style={{ width: `${pct}%` }}
         />
       </div>
@@ -131,7 +131,7 @@ function LandingHero({
           />
           <button
             onClick={handleStart}
-            className="px-8 py-3 bg-[#f26522] hover:bg-[#d95a1a] text-white font-bold text-base transition-colors cursor-pointer"
+            className="px-8 py-3 bg-[#BF0A30] hover:bg-[#96081f] text-white font-bold text-base transition-colors cursor-pointer"
           >
             Start
           </button>
@@ -165,7 +165,7 @@ function InsuranceStep({
           <button
             key={opt}
             onClick={() => onAnswer(opt)}
-            className="w-full py-4 border-2 border-gray-300 rounded-lg text-base font-medium text-gray-800 hover:border-[#f26522] hover:text-[#f26522] transition-colors cursor-pointer"
+            className="w-full py-4 border-2 border-gray-300 rounded-lg text-base font-medium text-gray-800 hover:border-[#002868] hover:text-[#002868] transition-colors cursor-pointer"
           >
             {opt}
           </button>
@@ -198,12 +198,12 @@ function BirthYearStep({
         value={value}
         onChange={(e) => onChange(e.target.value.replace(/\D/g, ""))}
         onKeyDown={(e) => e.key === "Enter" && value.length === 4 && onNext()}
-        className="w-full px-4 py-4 border-2 border-blue-500 rounded-lg text-base text-center outline-none mb-4 focus:border-blue-600"
+        className="w-full px-4 py-4 border-2 border-[#002868] rounded-lg text-base text-center outline-none mb-4 focus:border-[#BF0A30]"
       />
       <button
         onClick={onNext}
         disabled={value.length !== 4}
-        className="w-full py-4 bg-[#5b21b6] hover:bg-[#4c1d95] disabled:opacity-40 text-white font-bold text-base rounded-lg transition-colors cursor-pointer"
+        className="w-full py-4 bg-[#002868] hover:bg-[#001a45] disabled:opacity-40 text-white font-bold text-base rounded-lg transition-colors cursor-pointer"
       >
         Next
       </button>
@@ -229,7 +229,7 @@ function StateStep({
       <select
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="w-full px-4 py-4 border-2 border-blue-500 rounded-lg text-base outline-none mb-4 bg-white focus:border-blue-600"
+        className="w-full px-4 py-4 border-2 border-[#002868] rounded-lg text-base outline-none mb-4 bg-white focus:border-[#BF0A30]"
       >
         <option value="">Select your state</option>
         {US_STATES.map((s) => (
@@ -239,7 +239,7 @@ function StateStep({
       <button
         onClick={onNext}
         disabled={!value}
-        className="w-full py-4 bg-[#5b21b6] hover:bg-[#4c1d95] disabled:opacity-40 text-white font-bold text-base rounded-lg transition-colors cursor-pointer"
+        className="w-full py-4 bg-[#002868] hover:bg-[#001a45] disabled:opacity-40 text-white font-bold text-base rounded-lg transition-colors cursor-pointer"
       >
         Next
       </button>
@@ -260,7 +260,7 @@ function HouseholdStep({ onAnswer }: { onAnswer: (v: string) => void }) {
           <button
             key={opt}
             onClick={() => onAnswer(opt)}
-            className="w-full py-4 border-2 border-gray-300 rounded-lg text-base font-medium text-gray-800 hover:border-[#f26522] hover:text-[#f26522] transition-colors cursor-pointer"
+            className="w-full py-4 border-2 border-gray-300 rounded-lg text-base font-medium text-gray-800 hover:border-[#002868] hover:text-[#002868] transition-colors cursor-pointer"
           >
             {opt}
           </button>
@@ -295,13 +295,13 @@ function ContactStep({
             placeholder="First Name"
             value={data.firstName}
             onChange={(e) => onChange("firstName", e.target.value)}
-            className="flex-1 px-4 py-3 border-2 border-gray-300 rounded-lg outline-none focus:border-blue-500"
+            className="flex-1 px-4 py-3 border-2 border-gray-300 rounded-lg outline-none focus:border-[#002868]"
           />
           <input
             placeholder="Last Name"
             value={data.lastName}
             onChange={(e) => onChange("lastName", e.target.value)}
-            className="flex-1 px-4 py-3 border-2 border-gray-300 rounded-lg outline-none focus:border-blue-500"
+            className="flex-1 px-4 py-3 border-2 border-gray-300 rounded-lg outline-none focus:border-[#002868]"
           />
         </div>
         <input
@@ -309,20 +309,20 @@ function ContactStep({
           placeholder="Email Address"
           value={data.email}
           onChange={(e) => onChange("email", e.target.value)}
-          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg outline-none focus:border-blue-500"
+          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg outline-none focus:border-[#002868]"
         />
         <input
           type="tel"
           placeholder="Phone Number"
           value={data.phone}
           onChange={(e) => onChange("phone", e.target.value)}
-          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg outline-none focus:border-blue-500"
+          className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg outline-none focus:border-[#002868]"
         />
       </div>
       <button
         onClick={onSubmit}
         disabled={!ready}
-        className="w-full mt-4 py-4 bg-[#f26522] hover:bg-[#d95a1a] disabled:opacity-40 text-white font-bold text-base rounded-lg transition-colors cursor-pointer"
+        className="w-full mt-4 py-4 bg-[#BF0A30] hover:bg-[#96081f] disabled:opacity-40 text-white font-bold text-base rounded-lg transition-colors cursor-pointer"
       >
         Get My Free Quote →
       </button>
@@ -338,8 +338,8 @@ function ContactStep({
 function DoneScreen() {
   return (
     <div className="flex-1 flex flex-col items-center justify-center py-16 px-4 text-center">
-      <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-4">
-        <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div className="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4">
+        <svg className="w-8 h-8 text-[#002868]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
         </svg>
       </div>
@@ -350,7 +350,7 @@ function DoneScreen() {
       </p>
       <a
         href="tel:8338490822"
-        className="mt-8 inline-flex items-center gap-2 px-8 py-4 bg-[#f26522] hover:bg-[#d95a1a] text-white font-bold rounded-lg transition-colors"
+        className="mt-8 inline-flex items-center gap-2 px-8 py-4 bg-[#BF0A30] hover:bg-[#96081f] text-white font-bold rounded-lg transition-colors"
       >
         Call Now: 1-833-849-0822
       </a>

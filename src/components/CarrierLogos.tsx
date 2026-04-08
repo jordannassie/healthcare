@@ -98,7 +98,7 @@ function ShieldCheckIcon() {
 
 export default function CarrierLogos() {
   return (
-    <div className="bg-[#0a1e3d]">
+    <div className="bg-[#002868]">
       {/* Trust bar */}
       <div className="border-b border-white/10 py-3 px-4">
         <div className="max-w-5xl mx-auto flex flex-wrap items-center justify-center gap-x-8 gap-y-2">

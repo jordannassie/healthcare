@@ -14,15 +14,15 @@ export default function CookieBanner() {
           This website uses cookies, pixels, and similar technologies to enhance and improve our
           marketing. By using this website, you consent to the collection, use, and disclosure of
           your data as described in our{" "}
-          <a href="#" className="text-blue-400 underline hover:text-blue-300">
+          <a href="#" className="text-red-400 underline hover:text-red-300">
             Privacy Policy
           </a>{" "}
           and{" "}
-          <a href="#" className="text-blue-400 underline hover:text-blue-300">
+          <a href="#" className="text-red-400 underline hover:text-red-300">
             Cookie Policy
           </a>
           . If you wish to opt-out of our use of these technologies, click{" "}
-          <a href="#" className="text-blue-400 underline hover:text-blue-300">
+          <a href="#" className="text-red-400 underline hover:text-red-300">
             Manage Preferences
           </a>
           .

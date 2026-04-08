@@ -41,7 +41,7 @@ export default function SiteFooter() {
         <div className="flex flex-wrap gap-x-1 gap-y-1 mb-5">
           {footerLinks.map((link, i) => (
             <span key={link.label} className="flex items-center">
-              <a href={link.href} className="text-sm text-blue-600 hover:underline">
+              <a href={link.href} className="text-sm text-[#002868] hover:underline font-medium">
                 {link.label}
               </a>
               {i < footerLinks.length - 1 && (
@@ -74,7 +74,7 @@ export default function SiteFooter() {
             The plans we represent and their subsidiaries do not discriminate on the basis of race,
             color, national origin, age, disability, sex, sexual orientation, gender identity, or
             religion. To learn more about our nondiscrimination policy, please{" "}
-            <a href="#" className="text-blue-600 hover:underline">
+            <a href="#" className="text-[#BF0A30] hover:underline">
               click here
             </a>
             .
