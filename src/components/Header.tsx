@@ -24,7 +24,7 @@ export default function Header() {
         <Link href="/">
           <Image
             src={LOGO_URL}
-            alt="PickHealth Insurance"
+            alt="American Healthcare"
             width={400}
             height={120}
             className="h-24 w-auto object-contain"

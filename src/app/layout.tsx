@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "PickHealth Insurance – Compare Plans & Find Your Lowest Rates",
+  title: "American Healthcare – Compare Plans & Find Your Lowest Rates",
   description:
     "Compare health insurance plans from top providers. Get free quotes with no spam. Find localized coverage with a large agent network.",
 };

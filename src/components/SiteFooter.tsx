@@ -32,7 +32,7 @@ export default function SiteFooter() {
         {/* Top row: copyright + BBB */}
         <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
           <p className="text-sm text-gray-700 font-medium">
-            Copyright 2026 PickHealth Insurance, All Rights Reserved.
+            Copyright 2026 American Healthcare, All Rights Reserved.
           </p>
           <BbbBadge />
         </div>
@@ -54,7 +54,7 @@ export default function SiteFooter() {
         {/* Legal text */}
         <div className="space-y-3 text-xs text-gray-500 leading-relaxed">
           <p>
-            This website is owned and operated by PickHealth Insurance, LLC, a licensed health
+            This website is owned and operated by American Healthcare, LLC, a licensed health
             insurance agency. This website is not affiliated with the federal government or the
             federal Health Insurance Marketplace.
           </p>
