@@ -19,15 +19,15 @@ function PhoneIcon() {
 
 export default function Header() {
   return (
-    <header className="bg-white border-b-4 border-[#E8000D]">
+    <header className="bg-white border-b-4 border-[#7EC8E3]">
       <div className="max-w-6xl mx-auto px-4 sm:px-8 flex items-center justify-between py-3">
         <Link href="/">
           <Image
             src={LOGO_URL}
             alt="PickHealth Insurance"
-            width={200}
-            height={60}
-            className="h-12 w-auto object-contain"
+            width={400}
+            height={120}
+            className="h-24 w-auto object-contain"
             priority
           />
         </Link>

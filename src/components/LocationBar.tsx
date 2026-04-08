@@ -39,7 +39,7 @@ export default function LocationBar() {
       <div className="max-w-5xl mx-auto flex items-center justify-center gap-1.5 text-white text-xs font-semibold tracking-widest uppercase">
         <PinIcon />
         <span>
-          Serving: <span className="text-[#E8000D]">{location}</span>
+          Serving: <span className="text-[#7EC8E3]">{location}</span>
         </span>
       </div>
     </div>
